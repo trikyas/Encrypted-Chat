@@ -1,0 +1,103 @@
+/* temporary reset and body margin: CChat is designed to be placed in an existing web page */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0.8em;
+}
+
+/* */
+noscript p {
+    width: 203px;
+    margin: 0 0 10px 0;
+    color: #c00;
+    font-size: 0.8em;
+}
+
+#chatboxcontainer {
+    font: 0.75em verdana, arial, helvetica, freesans, sans-serif;
+    width: 225px;
+    border: 2px solid red;
+}
+
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1px;
+}
+
+#chatbox {
+    width: 203px;
+    height: 203px;
+    margin-bottom: 8px;
+    padding: 10px 10px 0 10px;
+    overflow: auto;
+}
+
+#error {
+    clear: both;
+    font-size: 0.9em;
+    color: #c00;
+    padding-top: 8px;
+    min-height: 18px;
+}
+
+#chatboxinput input {
+    display: block;
+}
+
+#remcharcontainer {
+    font-size: 0.8em;
+    color: #ccc;
+    margin: 1px 0 4px 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+}
+
+input#name, input#pw, input#email {
+    width: 219px;
+    margin-bottom: 5px;
+}
+
+input#name, input#pw, input#email, textarea#message {
+    padding: 2px;
+}
+
+input#chatsubmit, input#decrypt {
+    margin-bottom: 3px;
+    padding: 2px 6px;
+}
+
+input#chatsubmit {
+    float: left;
+}
+
+input#decrypt {
+    float: right;
+}
+
+input#chatsubmit:hover, input#decrypt:hover {
+    cursor: pointer;
+    background: #390;
+    color: #fff;
+}
+
+textarea#message {
+    font: 1em verdana, arial, helvetica, freesans, sans-serif;
+    width: 219px;
+    height: 100px;
+    overflow: auto;
+}
+
+/* change to font:1.1em for Linux */
+/* input#name, input#pw, input#chatsubmit, input#decrypt {font-size:1.0em;} */
+/* uncomment for old Linux browsers */
+.curved {
+    border: 1px solid #444;
+    border-radius: none;
+    background: linear-gradient(to bottom, #fff, #f0f8ff 100%);
+}
+ /* also defined in /js/cchat.js */

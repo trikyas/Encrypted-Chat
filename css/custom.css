@@ -1,0 +1,47 @@
+.content {
+    position: absolute;
+    width: 250px;
+    height: 60vh;
+    background: lightsteelblue;
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+    bottom: 0;
+    border: .7px solid #999;
+}
+.content #chatboxcontainer {
+    margin: 0 auto;
+}
+#title {color: darkslateblue;text-align: center;}
+input#name, input#pw, input#email, textarea#message {
+    padding: 4.5px 0 5px 4.5px;
+    border-radius: 0;
+    border: .7px solid #999;
+    text-decoration: line-through overline underline;
+    text-decoration-style: wavy;
+}
+#chatbox {
+    font-size: 1.1em;
+    color: lightseagreen;
+    margin: 1px 0 4px 0;
+    border-radius: 0;
+    border: .7px solid #999;
+    word-wrap: break-word;
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+input#chatsubmit, input#decrypt {
+    color: lightcoral;
+    border-radius: 3px;
+    border: .7px solid #999;
+}
+input#chatsubmit:hover, input#decrypt:hover {
+    cursor: pointer;
+    background: lightseagreen;
+    color: #fff;
+}
+#remchar{
+    font-size: 0.8em;
+    color: lightgoldenrodyellow;
+    margin: 1px 0 4px 0;
+}
