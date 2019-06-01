@@ -1,15 +1,15 @@
 <?php
 
 /**
-	* Very simple install script to set-up the database for CChat.
+	* Very simple install script to set-up the database for Chad's Crypto Chat.
 	* Define your constants in the configuration section below, then load this file via your web server
 	* (or via the command-line: php -f install.php).
 	*
-	* @author            Martin Latter <copysense.co.uk>
-	* @copyright         29/06/2014
+	* @author            Chad Trikyas mooney
+	* @copyright         23/06/2019
 	* @version           0.05
 	* @license           GNU GPL version 3.0 (GPL v3); http://www.gnu.org/licenses/gpl.html
-	* @link              https://github.com/Tinram/cchat.git
+	* @link              https://github.com/Trikyas/encrypted-chat.git
 */
 
 
@@ -113,7 +113,7 @@ else {
 	$sQuery = 'FLUSH PRIVILEGES';
 	$rResults = $oConnection->query($sQuery);
 
-	#  if run in browser, display link to CChat
+	#  if run in browser, display link to Chad's Crypto Chat
 	if (PHP_SAPI !== 'cli') {
 		echo LINE_BREAK . '<a href="./index.php">' . APP_NAME . '</a>';
 	}

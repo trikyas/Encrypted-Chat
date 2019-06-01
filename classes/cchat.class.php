@@ -3,13 +3,13 @@
 class Chatbox {
 
 	/**
-		* Crypto Chatbox.
+		* Chad's Crypto Chat.
 		*
-		* @author            Martin Latter <copysense.co.uk>
-		* @copyright         Martin Latter, September 2013
-		* @version           2.03
+		* @author            Chad Trikyas mooney
+		* @copyright         23/06/2019
+		* @version           0.05
 		* @license           GNU GPL version 3.0 (GPL v3); http://www.gnu.org/licenses/gpl.html
-		* @link              https://github.com/Tinram/cchat.git
+		* @link              https://github.com/Trikyas/encrypted-chat.git
 	*/
 
 
@@ -63,8 +63,8 @@ class Chatbox {
 		$oConn = self::getConnection();
 
 		$sQuery = '
-			SELECT name, message 
-			FROM ' . self::DB_TABLE . ' 
+			SELECT name, message
+			FROM ' . self::DB_TABLE . '
 			WHERE date > ' . $iTime;
 
 		$rResults = $oConn->query($sQuery);
@@ -108,7 +108,7 @@ class Chatbox {
 
 			$sQuery = '
 				SELECT id
-				FROM ' . self::DB_TABLE .' 
+				FROM ' . self::DB_TABLE .'
 				WHERE id > ' . $sID;
 
 			$rResults = $oConn->query($sQuery);
@@ -124,8 +124,8 @@ class Chatbox {
 				$aJSON = array();
 
 				$sQuery = '
-					SELECT id, name, message 
-					FROM ' . self::DB_TABLE . ' 
+					SELECT id, name, message
+					FROM ' . self::DB_TABLE . '
 					WHERE id > ' . $sID;
 
 				$rResults = $oConn->query($sQuery); # need to query again, else blank results between browser windows
@@ -151,7 +151,7 @@ class Chatbox {
 				DESC LIMIT 1';
 
 			$rResults = $oConn->query($sQuery);
-			$aResult = $rResults->fetch_row(); 
+			$aResult = $rResults->fetch_row();
 			$sID = $aResult[0];
 
 			$rResults->close();
@@ -188,8 +188,8 @@ class Chatbox {
 		$iDate = time();
 
 		$sInsert = '
-			INSERT INTO ' . self::DB_TABLE . ' 
-				(name, message, date) 
+			INSERT INTO ' . self::DB_TABLE . '
+				(name, message, date)
 			VALUES(?, ?, ?)';
 
 		$oStmt = $oConn->stmt_init();

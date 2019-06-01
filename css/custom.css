@@ -7,9 +7,13 @@
     padding: 5px;
     bottom: 0;
     border: .7px solid #999;
+    display:none;
 }
 .content #chatboxcontainer {
     margin: 0 auto;
+}
+#chatboxcontainer {
+    border: none !important;
 }
 #title {color: darkslateblue;text-align: center;}
 input#name, input#pw, input#email, textarea#message {

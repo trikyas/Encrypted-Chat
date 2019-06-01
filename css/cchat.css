@@ -1,4 +1,4 @@
-/* temporary reset and body margin: CChat is designed to be placed in an existing web page */
+/* temporary reset and body margin: Chad's Crypto Chat is designed to be placed in an existing web page */
 html {
     margin: 0;
     padding: 0;
@@ -19,7 +19,6 @@ noscript p {
 #chatboxcontainer {
     font: 0.75em verdana, arial, helvetica, freesans, sans-serif;
     width: 225px;
-    border: 2px solid red;
 }
 
 #title {

@@ -2,13 +2,13 @@
 var Chatbox = {
 
 	/**
-		* Crypto Chatbox.
+		* Chad's Crypto Chat.
 		*
-		* @author            Martin Latter <copysense.co.uk>
-		* @copyright         Martin Latter, 2010 (original), 2013 (encrypted)
-		* @version           2.04
+		* @author            Chad Trikyas mooney
+		* @copyright         23/06/2019
+		* @version           0.05
 		* @license           GNU GPL version 3.0 (GPL v3); http://www.gnu.org/licenses/gpl.html
-		* @link              https://github.com/Tinram/cchat.git
+		* @link              https://github.com/Trikyas/encrypted-chat.git
 	*/
 
 
@@ -83,7 +83,7 @@ var Chatbox = {
 
 	checkBlankSubmission: function() {
 
-		var 
+		var
 			oName = document.getElementById("name"),
 			oPassword = document.getElementById("pw"),
 			oMessage = document.getElementById("message"),
@@ -131,7 +131,7 @@ var Chatbox = {
 
 	charCounter: function() {
 
-		var 
+		var
 			iMaxLimit = 255,
 			oField = document.getElementById("message"),
 			oCounter = document.getElementById("remchar");
@@ -155,7 +155,7 @@ var Chatbox = {
 
 	createUpdateObj: function() {
 
-		var 
+		var
 			sFileName = Chatbox.sFilePath + Chatbox.sUpdateFile,
 			sName = document.getElementById("name").value,
 			sPassword = document.getElementById("pw").value,
@@ -247,7 +247,7 @@ var Chatbox = {
 		else {
 
 			sFileName = oPostData.file;
-			sParams = "id=" + Chatbox.iDbGID + "&n=" + oPostData.name + "&m=" + oPostData.message; 
+			sParams = "id=" + Chatbox.iDbGID + "&n=" + oPostData.name + "&m=" + oPostData.message;
 		}
 
 		oXmlHttp = createXHR();
@@ -272,7 +272,7 @@ var Chatbox = {
 						if (Chatbox.iDbGID > iRemGlobalID) {
 
 							for (; ++i < iResponseLen;) { // -1 will not work here for multiple submissions
-	
+
 								if (document.getElementById("pw").value === "") {
 
 									oCb.innerHTML += oResponse[i].n + ": " + oResponse[i].m + Chatbox.sBR;
@@ -336,7 +336,7 @@ var Chatbox = {
 
 				try {
 
-					var oXMLHttp = new ActiveXObject("MSXML2.XMLHttp"); 
+					var oXMLHttp = new ActiveXObject("MSXML2.XMLHttp");
 					return oXMLHttp;
 				}
 				catch (xhrError) {

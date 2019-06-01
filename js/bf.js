@@ -1,6 +1,6 @@
 
 /**
-	* Blowfish object literal for CChat
+	* Blowfish object literal for Chad's Crypto Chat
 	*
 	* @author            Nils Reimers, code condensed by Martin Latter
 	* @license           GPL v.3
